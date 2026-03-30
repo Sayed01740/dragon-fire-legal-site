@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Fire Legal | Privacy, Terms & License</title>
+    <meta name="description" content="Legal documentation for Dragon Fire - A decentralized Solana-powered arcade game. Privacy Policy, Terms & Conditions, and License information.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/logo.png" alt="Dragon Fire Logo" class="logo-header">
+        <span class="badge">Decentralized Gaming</span>
+        <h1>Dragon Fire</h1>
+        <p>Official Legal Center: Privacy, Security, and Player Rights on the Solana Blockchain.</p>
+    </header>
+
+    <nav>
+        <a href="#license">License</a>
+        <a href="#copyright">Copyright</a>
+        <a href="#privacy">Privacy Policy</a>
+    </nav>
+
+    <main class="container">
+        
+        <!-- SECTION: LICENSE -->
+        <section id="license">
+            <div class="card">
+                <div class="last-updated">Last updated: March 30, 2026</div>
+                <h2><span class="icon">📜</span> License Agreement</h2>
+                
+                <h3>1. Grant of License</h3>
+                <p>Dragon Fire grants you a personal, non-exclusive, non-transferable, limited license to play the game. Access to the full game (Levels 2-20) is contingent upon the activation of a verifiable **Solana Gaming Pass** on the Solana mainnet.</p>
+                
+                <h3>2. Demo Mode & Restrictions</h3>
+                <p>The Demo Mode allows access to the first level only. Level progression beyond Level 1 is restricted for guest users. The license is tied irrevocably to your public wallet address once the activation fee of 0.0025 SOL is paid.</p>
+                
+                <h3>3. Wallet Responsibility</h3>
+                <p>As a decentralized application, we do not custody your funds. You are solely responsible for securing your wallet credentials. We are not liable for loss of assets or failed transactions on the blockchain.</p>
+
+                <h3>4. No Warranties</h3>
+                <p>Dragon Fire is provided "as-is." We do not guarantee uninterrupted gameplay or bug-free performance. Use of the game constitutes acceptance of these licensing terms.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: COPYRIGHT -->
+        <section id="copyright">
+            <div class="card">
+                <div class="last-updated">Last updated: March 30, 2026</div>
+                <h2><span class="icon">⚖️</span> Copyright Policy</h2>
+                
+                <h3>1. Intellectual Property</h3>
+                <p>All game content including graphics, custom dragon sprites, animations, sound effects, and source code are the exclusive property of the Dragon Fire development team.</p>
+                
+                <h3>2. Prohibited Uses</h3>
+                <p>Unauthorized reproduction, modding, decompilation, or commercial exploitation of any Dragon Fire assets is strictly prohibited. You may not distribute modified versions of the game or use its assets in other projects.</p>
+
+                <h3>3. Trade Symbols</h3>
+                <p>The "Dragon Fire" name, logo, and related branding are protected trademarks. Any use of these marks without express written permission is a violation of copyright law.</p>
+
+                <h3>4. Notice of Copyright</h3>
+                <p>© 2026 Dragon Fire. All rights reserved. All blockchain-verifiable assets remain the property of the developers, while users hold a license to access said assets through the Gaming Pass.</p>
+            </div>
+        </section>
+
+        <!-- SECTION: PRIVACY POLICY -->
+        <section id="privacy">
+            <div class="card">
+                <div class="last-updated">Last updated: March 24, 2026</div>
+                <h2><span class="icon">🛡️</span> Privacy Policy</h2>
+                
+                <h3>1. Information We Collect</h3>
+                <p>We do **not** collect, store, or transmit any personal identifiable information (PII). All game progress and settings are stored locally in your browser's localStorage.</p>
+
+                <h3>2. Wallet & Blockchain Transparency</h3>
+                <p>We use your public wallet address solely to verify **Solana Gaming Pass** ownership. Transactions are recorded on the public Solana blockchain and are visible to anyone via ledger explorers.</p>
+
+                <h3>3. Data Storage</h3>
+                <p>Level progress, XP, and inventory are stored locally on your device. Clearing your cache will reset this data unless synced via a future cloud update. Pass ownership, however, is permanent on-chain.</p>
+
+                <h3>4. Third-Party Services</h3>
+                <p>We use **Helius RPC** for blockchain communication. No personal data is shared with Helius beyond the public address required for verification. We do not use tracking pixels or cookies.</p>
+
+                <a href="mailto:Comiclab101@gmail.com" id="contact-us" class="contact-button">Contact Support</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dragon Fire Development Group. Powered by Solana.</p>
+    </footer>
+
+    <script>
+        // Simple active state for navigation links
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
