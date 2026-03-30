@@ -47,10 +47,11 @@ header {
 }
 
 .logo-header {
-  width: 120px;
-  height: 120px;
+  width: 400px;
+  max-width: 90%;
+  height: auto;
   margin-bottom: 2rem;
-  filter: drop-shadow(0 0 20px var(--primary-glow));
+  filter: drop-shadow(0 0 25px var(--primary-glow));
   animation: float 3s ease-in-out infinite;
 }
 
